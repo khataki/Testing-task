@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>testovoe zadanie</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTOVOE</title>
 </head>
+
 <body>
-    <h1>testovoe zadanie</h1>
+    <h1>Список сделок из amoCRM</h1>
+
+    <table id="deals-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Бюджет</th>
+                <th>Дата создания</th>
+                <th>Дата изменения</th>
+                <th>Ответственный</th>
+            </tr>
+        </thead>
+        <tbody id="deals-list">
+            <!-- Сюда будут добавляться сделки -->
+        </tbody>
+    </table>
+
+    <div>
+        <button onclick="loadDeals()">Загрузить сделки</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
